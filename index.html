@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SENDENGO</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<nav>
+		<div class="nav-wrapper grey darken-4">
+			<a href="#" class="brand-logo"><img id="logo" src="assets/img/logo_sendengo.jpg"></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><i class="medium material-icons">chat</i></li>
+				<li><a href="sass.html">Contáctanos</a></li>
+				<li><a href="badges.html">REGISTRATE</a></li>
+				<li><a href="collapsible.html">INICIAR SESIÓN</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><i class="medium material-icons">chat</i></li>
+				<li><a href="#">Contáctanos</a></li>
+				<li><a href="#">REGISTRATE</a></li>
+				<li><a href="#">INICIAR SESIÓN</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<section id="principal" class="col s12 m8 l8">
+			<div id="principal_text">
+				<h4>La <span class="verde mejor">MEJOR</span> herramienta para transporte de carga</h4>
+				<p class="text-blanco">¡Descarga hoy nuestra aplicación!</p>
+			</div>
+			<div id="form_publica" class="cont-form">
+				<div id="cerrar_publica">x</div>
+				<form>
+					<div class="row">
+						<div class="col s10 m4 l4">
+							<label>CATEGORÍA DE TU CARGA</label>
+							<select class="browser-default" id="categoria" required data-error="wrong" data-success="right">
+                    <option value="" disabled selected>Categoría</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+						</div>
+						<div class="col s10 m4 l4">
+							<label>TIPO DE VEHÍCULO</label>
+							<select class="browser-default" id="tipo_vehiculo" required data-error="wrong" data-success="right">
+                    <option value="" disabled selected>Tipo</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+							<select class="browser-default" disabled id="subtipo_vehiculo" required data-error="wrong" data-success="right">
+                    <option value="" disabled selected>Subtipo</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+						</div>
+						<div class="col s10 m4 l4">
+							<div class="input-field col s12">
+								<textarea id="descripcion" class="materialize-textarea" data-length="100" placeholder="Descripción (100 caracteres máximo)" required data-error="wrong" data-success="right"></textarea>
+								<label for="descripcion">DESCRIPCIÓN</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s10 m4 l4">
+							<label for="first_name">ORIGEN</label>
+							<input placeholder="Ciudad de Origen" id="origen" type="text" class="validate" data-error="wrong" data-success="right" required>
+
+						</div>
+						<div class="col s10 m4 l4">
+							<label for="first_name">DESTINO</label>
+							<input placeholder="Ciudad de Destino" id="destino" type="text" class="validate" data-error="wrong" data-success="right" required>
+
+						</div>
+						<div class="col s10 m4 l4">
+							<label for="first_name">FECHA DE RECOLECCION</label>
+							<input placeholder="Año/Mes/Día" id="fecha_recolecion" type="date" class="validate" required data-error="wrong" data-success="right">
+
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col s10 m4 l4">
+							<label for="first_name">TARIFA</label>
+							<input placeholder="$(opcional)sinI.V.A" id="tarifa" type="text" class="validate" data-error="wrong" data-success="right" required>
+						</div>
+						<div class="col s10 m8 l8">
+							<div class="switch">
+								<label>
+                      <input type="checkbox" required data-error="wrong" data-success="right">
+                      <span class="lever"></span>
+                      Acepto <a href="#">TÉRMINOS</a>, <a href="#">CONDICIONES</a> Y <a href="#">AVISO DEPRIVACIDAD </a>
+                    </label>
+							</div>
+
+						</div>
+
+
+
+					</div>
+
+				</form>
+			</div>
+			<div id="form_registra" class="cont-form">
+				<div id="cerrar_registra">x</div>
+				Formulario registra
+
+				<form class="row">
+					<div class="col s10 m4 l4">coumna 1</div>
+					<div class="col s10 m4 l4">columna 2</div>
+					<div class="col s10 m4 l4">columna 3</div>
+				</form>
+
+
+			</div>
+			<div class="col s12 m8 l8">
+				<button id="btn_publica" class="btn bgverde">PUBLICA TU CARGA</button>
+				<button id="btn_registraflota" class="btn bgverde">REGISTRA TU FLOTA</button>
+			</div>
+		</section>
+    <section class="row ">
+      <div  id="foto_hombres" class="col s8  m7 l7 offset-s2 offset-m1 offset-l1 ">
+        <img src="assets/img/choferes.png" alt="choferes" >
+      </div>
+    </section>
+
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

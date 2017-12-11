@@ -1,0 +1,140 @@
+body {
+								background-image: url("../assets/img/fondo.jpg");
+								background-size: cover;
+								background-position: center center;
+								background-repeat: no-repeat;
+								background-attachment: fixed;
+                height: 1vh;
+}
+
+nav {
+								margin-top: 40px;
+}
+
+h4 {
+								font-family: Verdana, Geneva, sans-serif;
+								color: #fff;
+								font-size: 2.2vw !important;
+}
+
+#logo {
+								margin-top: 5%;
+								margin-left: 65%;
+								width: 80px;
+								height: auto;
+}
+
+.chatico {
+								color: #FFF;
+}
+
+#principal {
+								text-align: right;
+								padding: 3%;
+}
+
+#principal_text {
+								margin-top: 10vh;
+								display: block;
+}
+
+#form_publica {
+								display: none;
+}
+
+#form_registra {
+								display: none;
+}
+
+#cerrar_publica, #cerrar_registra {
+								color: #9d9d9e;
+								font-size: 1.8vw;
+								font-weight: bold;
+								text-align: right;
+								display: block;
+								padding-top: 5px;
+								padding-right: 10px;
+}
+#foto_hombres{
+  margin-bottom: 0px;
+  position: absolute;
+  
+}
+
+#foto_hombres img {
+								width: 100%;
+								height: auto;
+								margin-bottom: 0px;
+}
+
+.verde {
+								color: #37ab2f;
+}
+
+.mejor {
+								font-weight: bolder;
+}
+
+.text-blanco {
+								font-family: Verdana, Geneva, sans-serif;
+								font-size: 1.4vw;
+								color: #FFF;
+								line-height: 5%;
+}
+
+.bgverde {
+								background-color: #37ab2f !important;
+								color: #000 !important;
+								font-weight: bold;
+								border-radius: 10px !important;
+								margin-top: 2%;
+}
+
+.bgverde:hover {
+								background-color: #000 !important;
+								color: #fff !important;
+}
+
+.bgverde:active {
+								background-color: #000 !important;
+								color: #fff !important;
+}
+
+.cont-form {
+								background-color: rgba(255, 255, 255, 0.8);
+								border-radius: 20px;
+								text-align: left;
+								padding: 1% 2%;
+}
+
+@media (max-width: 600px) {
+								h4 {
+																font-size: 3.5vw !important;
+																text-align: center;
+								}
+								.text-blanco {
+																font-size: 2.9vw;
+								}
+								#principal {
+																text-align: center;
+								}
+								#cerrar_publica, #cerrar_registra {
+																font-size: 3.2vw;
+								}
+}
+
+@media (max-width: 480px) {
+								h4 {
+																font-size: 5vw !important;
+																text-align: center;
+								}
+								.text-blanco {
+																font-size: 3.2vw;
+								}
+								#principal {
+																text-align: center;
+								}
+								#cerrar_publica, #cerrar_registra {
+																font-size: 3.5vw;
+								}
+}
